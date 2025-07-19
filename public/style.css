@@ -1,0 +1,24 @@
+body{
+    background-image: url("blog\ image2.jpg");
+    background-size: cover;
+}
+.mb-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 20px;
+
+}
+.box{
+    padding-top: 100px;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

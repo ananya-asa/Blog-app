@@ -1,0 +1,23 @@
+<%-include("header.ejs",{
+    title:"Blog App New Page",
+    styles:["style.css"]
+}) %>
+
+
+    <form action="/new" method="POST">
+    <div class="box">
+    
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Title</label>
+  <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title of your Post">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+  <textarea name="Content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="button1">
+    <button type="submit" class="btn btn-outline-dark">Add Post</button>
+</div>
+</div>
+</form>
+<%-include("footer.ejs") %>

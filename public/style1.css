@@ -1,0 +1,84 @@
+body{
+    background-image: url("blog\ image1.jpg");
+    background-size: cover;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+
+
+
+.head1{
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.card1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.card-body{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+  overflow: hidden;
+   
+}
+.card{
+    height:280px;
+    display: flex;
+    background-color: rgb(240, 216, 181);
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+.card-text{
+    max-height: 100px;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin: 10px 0;
+}
+.card img{
+    max-height: 100px;
+    min-width:80px ;
+    object-fit: cover;
+}
+.btn{
+    width: 80px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    border-radius: 20%;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+
+}
+.button-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: auto;
+}
+.footer1{
+ 
+  color: rgb(12, 2, 2);
+  padding: 20px;
+  text-align: center;
+  max-height: 30px;
+}

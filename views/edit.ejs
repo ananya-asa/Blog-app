@@ -1,0 +1,27 @@
+<%-include("header.ejs",{
+    title:"Edit Blog App",
+    styles:["style.css"]
+}) %>
+    
+    <form action="/update" method="POST">
+    <div class="box">
+
+
+        <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Title</label>
+  <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title of your Post" value="<%= post.title %>">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label" >Content</label>
+  <textarea name="Content" class="form-control" id="exampleFormControlTextarea1" rows="3"><%=post.Content%> </textarea>
+  
+
+</div>
+<div class="button1">
+    <input type="hidden" name="id" value="<%= post.id %>">
+
+    <button type="submit" class="btn btn-outline-dark">Update</button>
+</div>
+</div>
+</form>
+    <%-include("footer.ejs") %>

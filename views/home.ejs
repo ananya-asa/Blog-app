@@ -1,0 +1,33 @@
+<%- include("header.ejs",{
+  title:"Blog App Home Page",
+  styles:["style1.css"]
+}) %>
+<div class="head1">
+<h1 class="heading">"Soft Pages & Silent Thoughts"</h1>
+</div>
+
+<div class="card1">
+    <% posts.forEach(function(post){%>
+
+<div class="card" style="width: 12rem;">
+  <div class="card-body">
+  <img src="blog image2.jpg" class="card-img-top" alt="Post image">
+
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"><%= post.Content%></p>
+    <div class="button-group">
+      <form action="/edit" method="post">
+        <input type="hidden" name="id" value="<%= post.id %>">
+   <button type="submit" class="btn btn-outline-dark">Edit</button></form>
+   
+   <form action="/delete" method="post">
+     <input type="hidden" name="id" value="<%= post.id %>">
+   <button type="submit" class="btn btn-outline-dark">Delete</button>
+   </form>
+  </div>
+
+  </div>
+</div>
+<%})%>
+</div>
+<%-include("footer.ejs") %>
